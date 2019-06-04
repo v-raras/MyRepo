@@ -1,3 +1,1 @@
-TestSolution_.zip
-TestSolution_managed_.zip
-MasterSolution_managed_.zip
+
