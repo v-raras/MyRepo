@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WebResource>
-  <WebResourceId>{186d50e5-d87b-e911-a97f-000d3af246cc}</WebResourceId>
+  <WebResourceId>{46b96ff8-8e86-e911-a97f-000d3af246cc}</WebResourceId>
   <Name>new_htmlfile</Name>
   <DisplayName>HTML File</DisplayName>
   <WebResourceType>1</WebResourceType>
-  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IntroducedVersion>1.0</IntroducedVersion>
   <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
   <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
   <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
   <IsCustomizable>1</IsCustomizable>
   <CanBeDeleted>1</CanBeDeleted>
   <IsHidden>0</IsHidden>
-  <FileName>/WebResources/new_htmlfile186D50E5-D87B-E911-A97F-000D3AF246CC</FileName>
+  <FileName>/WebResources/new_htmlfile46B96FF8-8E86-E911-A97F-000D3AF246CC</FileName>
 </WebResource>

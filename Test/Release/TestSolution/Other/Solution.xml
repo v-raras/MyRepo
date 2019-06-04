@@ -3,7 +3,7 @@
   <SolutionManifest>
     <UniqueName>TestSolution</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="TestSolution" languagecode="1033" />
+      <LocalizedName description="Test Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.0.0</Version>
@@ -169,14 +169,6 @@
       </MissingDependency>
       <MissingDependency>
         <Required key="14" type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="22" type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0)" />
         <Dependent key="14" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
     </MissingDependencies>
