@@ -3,7 +3,7 @@
   <SolutionManifest>
     <UniqueName>TestSolution</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="Test Solution" languagecode="1033" />
+      <LocalizedName description="TestSolution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.0.0</Version>
@@ -164,12 +164,12 @@
         <Dependent key="21" type="29" displayName="Update Contact" id="{28920155-1862-4b42-8209-80bce3694773}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="19" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
-        <Dependent key="19" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
-      </MissingDependency>
-      <MissingDependency>
         <Required key="14" type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
         <Dependent key="14" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+        <Dependent key="19" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
