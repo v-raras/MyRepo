@@ -1,2 +1,1 @@
 TestSolution_managed_.zip
-A
