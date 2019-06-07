@@ -84,7 +84,6 @@
       <RootComponent type="1" schemaName="contact" behavior="0" />
       <RootComponent type="29" id="{28920155-1862-4b42-8209-80bce3694773}" behavior="0" />
       <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" behavior="0" />
-      <RootComponent type="61" schemaName="new_htmlfile" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
