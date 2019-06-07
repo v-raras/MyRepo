@@ -30,6 +30,11 @@ Import-Module $env:DOWNLOADSECUREFILE5_SECUREFILEPATH
 Import-Module $env:DOWNLOADSECUREFILE6_SECUREFILEPATH
 }
 
+Write-Host $solutionImportPath
+Write-Host $solution
+Write-Host $solutionListFile
+
+
 
 foreach($solution in [System.IO.File]::ReadLines($solutionListFile)){
     Write-Host "Getting " $solution.Trim() " from zip"
