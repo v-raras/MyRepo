@@ -1,3 +1,8 @@
+param(
+$path,
+$solutionListFile,
+$solutionImportPath
+)
 If (Test-Path -Path $path -PathType Container)
 
     { 
