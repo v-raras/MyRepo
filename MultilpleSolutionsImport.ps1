@@ -1,7 +1,3 @@
-$path = "$(System.DefaultWorkingDirectory)/_v-raras-CI/drop/SolutionsToBeImported"
-$solutionListFile = "$(System.DefaultWorkingDirectory)/_v-raras-CI/drop/solutions.txt"
-$solutionImportPath = "$(System.DefaultWorkingDirectory)/_v-raras-CI/drop"
-
 If (Test-Path -Path $path -PathType Container)
 
     { 
