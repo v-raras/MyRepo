@@ -63,7 +63,7 @@ $solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $file.FullName
 
         $importJobId = [guid]::NewGuid()
     
-        $asyncOperationId = Import-XrmSolution -ConnectionString "$CrmConnectionString" -SolutionFilePath "$solutionFile" -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
+        $asyncOperationId = Import-XrmSolution -ConnectionString "$CrmConnectionString" -SolutionFilePath $file.FullName -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
    
         Write-Host "Solution Import Completed. Import Job Id: $importJobId"
 
