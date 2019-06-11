@@ -23,7 +23,7 @@ Write-Host $solutionName
         Copy-Item -Path $solutionPath  -Destination $path
         Write-Host "solution file copied from " $solutionImportPath " to " $path " "
         
-        $solutionFileName =  "$solution" + ";"
+        $solutionFileName +=  "$solution" + ";"
         }
 
 If (Test-Path -Path $path -PathType Container)
