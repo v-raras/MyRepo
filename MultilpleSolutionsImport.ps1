@@ -47,7 +47,7 @@ $solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $solutionFile
 
     
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
-    $solution = Get-XrmSolution -ConnectionString "$CrmConnectionString" -UniqueSolutionName $solutionInfo.UniqueName
+    $solution = Get-XrmSolution -ConnectionString "$crmConnectionString" -UniqueSolutionName $solutionInfo.UniqueName
 
     if ($solution -eq $null)
     {
@@ -64,7 +64,7 @@ $solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $solutionFile
 
         $importJobId = [guid]::NewGuid()
     
-        $asyncOperationId = Import-XrmSolution -ConnectionString "$CrmConnectionString" -SolutionFilePath $solutionFile -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
+        $asyncOperationId = Import-XrmSolution -ConnectionString "$crmConnectionString" -SolutionFilePath $solutionFile -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
    
         Write-Host "Solution Import Completed. Import Job Id: $importJobId"
 
