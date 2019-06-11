@@ -35,4 +35,4 @@ If (Test-Path -Path $path -PathType Container)
 $newlineDelimited = $solutionFileName -replace ';', "%0D%0A"
 
 Write-Host "##vso[task.setvariable variable=sauce]$newlineDelimited"
-Write-Host $solutionFileName
+Write-Host $env:sauce
