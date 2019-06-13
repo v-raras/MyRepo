@@ -1,0 +1,159 @@
+if (typeof (SYED) === "undefined") {
+    SYED = { __namespace: true };
+}
+if (typeof (SYED.SourceControlQueue) === "undefined") {
+    SYED.SourceControlQueue = { __namespace: true };
+}
+
+'use strict';
+SYED.SourceControlQueue.EventHandler =
+    {
+
+        ShowHideSolutionDetailsSections: function (executionContext) {
+            try {
+                var formContext = executionContext.getFormContext();
+                var mergeSolution = formContext.getAttribute("syed_mergesolutions").getValue();
+                var listOfSolutionSection = formContext.ui.tabs.get("MergeSolutions").sections.get("ListOfSolutionSection");
+                var HTMLSection = formContext.ui.tabs.get("MergeSolutions").sections.get("HTMLSection");
+
+                var formType = formContext.ui.getFormType();
+                if (formType != "1") {
+                    if (mergeSolution) {
+                        listOfSolutionSection.setVisible(true);
+                    } else {
+                        formContext.ui.clearFormNotification("SUBMIT");
+                        listOfSolutionSection.setVisible(false);
+                    }
+                    SYED.SourceControlQueue.EventHandler.ShowHideHTML(formContext, HTMLSection);
+                    formContext.ui.tabs.get("MergeSolutions").setVisible(true);
+                    formContext.ui.tabs.get("General").sections.get("MasterSolutionSection").setVisible(true);
+                }
+                else {
+                    formContext.ui.tabs.get("MergeSolutions").setVisible(false);
+                    formContext.ui.tabs.get("General").sections.get("MasterSolutionSection").setVisible(false);
+                    formContext.getAttribute("syed_name").setValue("SOL-" + new Date().toLocaleString());
+                }
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.ShowHideSolutionDetailsSections function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        ShowHideHTML: function (formContext, HTMLSection) {
+            try {
+                var commitID = formContext.getAttribute("syed_commitids").getValue();
+                if (commitID !== "" && commitID !== null) {
+                    HTMLSection.setVisible(true);
+                } else {
+                    HTMLSection.setVisible(false);
+                }
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.RefreshPage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        RefreshPage: function (executionContext) {
+            try {
+                var formContext = executionContext.getFormContext();
+                var entityFormOptions = {};
+                entityFormOptions["entityName"] = formContext.data.entity.getEntityName();
+                entityFormOptions["entityId"] = formContext.data.entity.getId();
+                Xrm.Navigation.openForm(entityFormOptions);
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.RefreshPage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        SavePage: function (executionContext) {
+            try {
+                var formContext = executionContext.getFormContext();
+                formContext.data.save().then(
+                    function () {
+                        SYED.SourceControlQueue.EventHandler.RefreshPage(executionContext);
+                    },
+                    function (error) {
+                        Xrm.Navigation.openAlertDialog(error.message);
+                    });
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.SavePage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        OnRowSelected: function (executionContext) {
+            try {
+                executionContext.getFormContext().getData().getEntity().attributes.forEach(function (attr) {
+                    if (attr.getName() !== "syed_order" && attr.getName() !== "syed_newversion" && attr.getName() !== "syed_exportas") {
+                        attr.controls.forEach(function (c) {
+                            c.setDisabled(true);
+                        })
+                    }
+                });
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.OnRowSelected function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        ShowHideMergeButton: function (executionContext) {
+            try {
+
+                var formContext = executionContext.getFormContext();
+                formContext.ui.clearFormNotification("SUBMIT");
+                var sourceControlQueueId = formContext.data.entity.getId();
+                var formType = formContext.ui.getFormType();
+                var mergeSolution = formContext.getAttribute("syed_mergesolutions").getValue();
+
+                if (formType != "1") {
+                    Xrm.WebApi.online.retrieveMultipleRecords("syed_solutiondetail", "?$select=_syed_crmsolutionsid_value&$filter=_syed_listofsolutionid_value eq " + sourceControlQueueId + "").then(
+                        function success(results) {
+                            if (results.entities.length > 0) {
+                                if (mergeSolution) {
+                                    Xrm.WebApi.online.retrieveMultipleRecords("syed_mergesolutions", "?$select=syed_uniquename&$filter=_syed_listofsolution_value eq " + sourceControlQueueId + "").then(
+                                        function success(results) {
+                                            if (results.entities.length > 0) {
+                                                formContext.getAttribute("syed_status").setValue("Queued");
+                                                SYED.SourceControlQueue.EventHandler.SavePage(executionContext);
+                                            }
+                                            else {
+                                                formContext.ui.setFormNotification('To Submit, Please select list of Solutions to be merged', 'ERROR', 'SUBMIT');
+                                            }
+                                        },
+                                        function (error) {
+                                            Xrm.Utility.alertDialog(error.message);
+                                        }
+                                    );
+                                }
+                                else {
+                                    formContext.getAttribute("syed_status").setValue("Queued");
+                                    SYED.SourceControlQueue.EventHandler.SavePage(executionContext);
+                                }
+                            }
+                            else {
+                                formContext.ui.setFormNotification('To Submit, Please select Master Solution', 'ERROR', 'SUBMIT');
+                            }
+
+                        },
+                        function (error) {
+                            Xrm.Utility.alertDialog(error.message);
+                        }
+                    );
+                }
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.ShowHideMergeButton function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        }
+    }
