@@ -4,7 +4,6 @@
 param(
 $solutionListFile,
 $solutionImportPath,
-$solutionContainer,
 $crmConnectionString,
 $override,
 $publishWorkflows,
@@ -37,10 +36,9 @@ Write-Host $solutionListFile
 
 
 
-foreach($solution in [System.IO.File]::ReadLines($solutionListFile)){
-    Write-Host "Getting " $solution.Trim() " from zip"
-    $solutionFile = $solutionImportPath + "\" + $solution.Trim()
-$solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $solutionFile
+foreach($file in Get-ChildItem -Path $solutionImportPath)
+{
+$solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $file.FullName
 
     Write-Host "Solution Name: " $solutionInfo.UniqueName
     Write-Host "Solution Version: " $solutionInfo.Version
@@ -64,7 +62,7 @@ $solutionInfo = Get-XrmSolutionInfoFromZip -SolutionFilePath $solutionFile
 
         $importJobId = [guid]::NewGuid()
     
-        $asyncOperationId = Import-XrmSolution -ConnectionString "$crmConnectionString" -SolutionFilePath $solutionFile -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
+        $asyncOperationId = Import-XrmSolution -ConnectionString "$crmConnectionString" -SolutionFilePath $file.FullName -publishWorkflows $publishWorkflows -overwriteUnmanagedCustomizations $overwriteUnmanagedCustomizations -SkipProductUpdateDependencies $skipProductUpdateDependencies -ConvertToManaged $convertToManaged -HoldingSolution $holdingSolution -ImportAsync $true -WaitForCompletion $true -ImportJobId $importJobId -AsyncWaitTimeout $AsyncWaitTimeout -Verbose
    
         Write-Host "Solution Import Completed. Import Job Id: $importJobId"
 
