@@ -1,6 +1,5 @@
 param(
-$solutionListFile,
-$path
+$solutionListFile
 )
         foreach($solution in [System.IO.File]::ReadLines($solutionListFile)){
 $solutionFileName +=  "$solution" + ";"
