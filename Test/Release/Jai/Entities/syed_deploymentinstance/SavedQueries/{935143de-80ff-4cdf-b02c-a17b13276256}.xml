@@ -10,8 +10,8 @@
     <layoutxml>
       <grid name="syed_deploymentinstances" jump="syed_name" select="1" icon="1" preview="0">
         <row name="syed_deploymentinstance" id="syed_deploymentinstanceid">
-          <cell name="syed_name" width="300" />
-          <cell name="createdon" width="125" />
+          <cell name="syed_name" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="syed_instanceurl" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
         </row>
       </grid>
     </layoutxml>
@@ -21,10 +21,11 @@
         <entity name="syed_deploymentinstance">
           <attribute name="syed_deploymentinstanceid" />
           <attribute name="syed_name" />
-          <attribute name="createdon" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <order attribute="syed_name" descending="false" />
+          <attribute name="syed_instanceurl" />
         </entity>
       </fetch>
     </fetchxml>
