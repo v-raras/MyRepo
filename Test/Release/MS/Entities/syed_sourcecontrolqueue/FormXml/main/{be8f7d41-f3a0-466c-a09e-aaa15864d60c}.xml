@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab id="{dbbe6c21-0874-46fe-a4c9-3da539a0d813}" name="General" expanded="true" locklevel="0" showlabel="true" verticallayout="true" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{94a443b7-1661-70aa-12d3-cb49d2622473}" name="MasterSolutionSection" locklevel="0" showlabel="false" IsUserDefined="0" columns="1" showbar="false" labelwidth="115" layout="varwidth" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Master Solution Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e388d64d-04a6-2680-11d5-9e1116ee0b5a}" showlabel="true" colspan="1" auto="false" rowspan="5">
+                        <labels>
+                          <label description="Master Solution " languagecode="1033" />
+                        </labels>
+                        <control id="MasterSolution" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{149b28c6-6d77-bbe0-dced-138d9a9406dc}">
+                          <parameters>
+                            <ViewId>{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>syed_syed_sourcecontrolqueue_syed_solutiondeta</RelationshipName>
+                            <TargetEntityType>syed_solutiondetail</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{EFFBA90F-D0BE-428B-B79A-B626FD26F2D5},{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>2</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{3a4ae18e-f16f-4d1f-897b-6e280c07a645}" showlabel="false" IsUserDefined="0" showbar="false" name="{3a4ae18e-f16f-4d1f-897b-6e280c07a645}" columns="1" locklevel="0" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c052f35a-440a-431c-9f82-35a0804cfaee}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="syed_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_name" uniqueid="{b729aaa2-d162-a13a-82c1-715639aae446}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36aa058e-983d-7e00-6b6c-aa911bd5795a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Request Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_comment" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_comment" uniqueid="{860e99a8-eb53-0d0e-9b90-d4b4ce266d60}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a39b0c60-42ae-c60a-79bc-03aecee1dee7}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Check In" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_checkin" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_checkin" uniqueid="{e6408c52-9c80-a277-364c-76ae4ee7e394}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5353d4a7-3cc0-6e9b-25b5-17a7755d9ba0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Overwrite Solutions.txt" languagecode="1033" />
+                        </labels>
+                        <control id="syed_overwritesolutionstxt" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_overwritesolutionstxt" disabled="false" uniqueid="{346c226a-b87e-110c-1a4d-4e5b19e0c03b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a2827c6-3926-494b-79d9-14a4ae66ad64}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Deployment Instance" languagecode="1033" />
+                        </labels>
+                        <control id="syed_deploymentinstance" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="syed_deploymentinstance" disabled="false" uniqueid="{c0985255-2223-2438-862b-e389d41a2913}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{935143DE-80FF-4CDF-B02C-A17B13276256}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6cd732d-08d3-a9d7-0288-2c35a812376d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Remote Name" languagecode="1033" />
+                        </labels>
+                        <control id="syed_remotename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_remotename" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ee98b61-15cc-7a8b-63d6-2bb0b26eb62a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Branch" languagecode="1033" />
+                        </labels>
+                        <control id="syed_branch" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_branch" uniqueid="{bdad16c2-5444-b32b-771c-73a484d3251c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e15200b4-c74e-0053-bc32-14053d289405}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Repository Url" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_repositoryurl" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_repositoryurl" uniqueid="{3d7228ab-18a9-41c2-6113-1a064ea88c2d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b25e6d07-0d73-b753-9a71-9485467c2150}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Include In Release" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_includeinrelease" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_includeinrelease" uniqueid="{18ed4571-a58c-bb6b-d935-87b16bd3c080}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9b90983e-75dd-28d9-2c40-e686cc5d1025}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Queue Status" languagecode="1033" />
+                        </labels>
+                        <control disabled="true" id="syed_status" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_status" uniqueid="{21a4d35d-19e8-661a-6d2a-bcb653addb16}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{074a6da7-2b4a-1406-bc3e-410c89dde3d2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Commit Ids" languagecode="1033" />
+                        </labels>
+                        <control id="syed_commitids" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_commitids" disabled="false" uniqueid="{16de16e7-485e-87a6-8ab2-933b565c21ee}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9b4be2a9-a12c-6aca-5dd5-d28b0bb73c15}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" uniqueid="{1453de7a-56a9-58b7-78da-0a96e38d3c46}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="MergeSolutions" id="{6909a0e9-8d5a-26b6-2773-ee106537d352}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Merge Solutions" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Merge" showlabel="false" showbar="false" locklevel="0" id="{59611bee-9413-0254-de5e-ab2800934c67}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Merge" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5a8897d5-b494-0082-734b-19d3507c7c45}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Merge Solutions" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_mergesolutions" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_mergesolutions" uniqueid="{dbdc9add-7227-2b3c-2aeb-67d571414021}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="ListOfSolutionSection" showlabel="false" showbar="false" locklevel="0" id="{279b156e-96e1-7db8-18c1-c49150151aa2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="ListOfSolutionSection" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{73d842bb-959e-4e18-ed6a-431ac2e65a14}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="MergeSolution" languagecode="1033" />
+                        </labels>
+                        <control id="MergeSolution" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{909a375e-0803-552d-3dde-310600925012}">
+                          <parameters>
+                            <ViewId>{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution</RelationshipName>
+                            <TargetEntityType>syed_mergesolutions</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{5371C70E-23D3-485F-87FB-54C2D28173A1},{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="HTMLSection" showlabel="false" showbar="false" locklevel="0" id="{aed93572-b9b3-e99c-142e-9bc7ae860016}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                  <labels>
+                    <label description="HTMLSection" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{47eb545e-89a5-959c-60e1-335ec6215415}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="DynamicContentID" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_DynamicContentID" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>syed_/HTML/SourceControlQueue</Url>
+                            <PassParameters>true</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <WebResourceId>{D1C27AD9-DC77-E911-A95D-000D3AF2CB54}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{43770319-c98c-444b-8250-f253958622be}" columns="111">
+        <rows>
+          <row>
+            <cell id="{78a41b70-a54c-4822-8104-704264a74b17}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cb61724f-5537-4b7c-8679-0d667a2d5e19}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ba73c1dc-5918-133b-d185-d15558d053a2}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{149b28c6-6d77-bbe0-dced-138d9a9406dc}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>syed_syed_sourcecontrolqueue_syed_solutiondeta</RelationshipName>
+              <TargetEntityType>syed_solutiondetail</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{EFFBA90F-D0BE-428B-B79A-B626FD26F2D5},{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>2</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <ViewId>{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>syed_syed_sourcecontrolqueue_syed_solutiondeta</RelationshipName>
+              <TargetEntityType>syed_solutiondetail</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{EFFBA90F-D0BE-428B-B79A-B626FD26F2D5},{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>2</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>syed_syed_sourcecontrolqueue_syed_solutiondeta</RelationshipName>
+                <TargetEntityType>syed_solutiondetail</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{EFFBA90F-D0BE-428B-B79A-B626FD26F2D5},{82EEC2AE-A77B-E911-A95D-000D3AF2C610}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{909a375e-0803-552d-3dde-310600925012}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution</RelationshipName>
+              <TargetEntityType>syed_mergesolutions</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{5371C70E-23D3-485F-87FB-54C2D28173A1},{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>4</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <ViewId>{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution</RelationshipName>
+              <TargetEntityType>syed_mergesolutions</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{5371C70E-23D3-485F-87FB-54C2D28173A1},{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>4</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution</RelationshipName>
+                <TargetEntityType>syed_mergesolutions</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{5371C70E-23D3-485F-87FB-54C2D28173A1},{7BFBEB51-DB81-E911-A95A-000D3AF2CECB}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="syed_/Scripts/SourceControlQueue/EventHandler" libraryUniqueId="{dc8ec579-5cd8-6093-84d2-a275411d0947}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SYED.SourceControlQueue.EventHandler.ShowHideSolutionDetailsSections" libraryName="syed_/Scripts/SourceControlQueue/EventHandler" handlerUniqueId="{8c9a933a-aabc-486d-91b8-ed6572085c72}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="syed_mergesolutions">
+          <Handlers>
+            <Handler functionName="SYED.SourceControlQueue.EventHandler.SavePage" libraryName="syed_/Scripts/SourceControlQueue/EventHandler" handlerUniqueId="{2c370154-a98c-9a64-a089-0373ed04ddce}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onrecordselect" application="false" active="false" relationship="" control="ListofSolutionsToBeMerged">
+          <Handlers>
+            <Handler functionName="SYED.SourceControlQueue.EventHandler.OnRowSelected" libraryName="syed_/Scripts/SourceControlQueue/EventHandler" handlerUniqueId="{d92c9d24-2ec3-6760-cab9-8e901403dd1a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onrecordselect" application="false" active="false" relationship="" control="MasterSolution">
+          <Handlers>
+            <Handler functionName="SYED.SourceControlQueue.EventHandler.OnRowSelected" libraryName="syed_/Scripts/SourceControlQueue/EventHandler" handlerUniqueId="{ac9aed4e-6a72-996b-9968-40bd06e26c17}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onrecordselect" application="false" active="false" relationship="" control="MergeSolution">
+          <Handlers>
+            <Handler functionName="SYED.SourceControlQueue.EventHandler.OnRowSelected" libraryName="syed_/Scripts/SourceControlQueue/EventHandler" handlerUniqueId="{012e2d90-2cd0-567b-b3e8-67cae608d3b5}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
