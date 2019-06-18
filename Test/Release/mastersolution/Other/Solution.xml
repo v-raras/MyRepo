@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.5220" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.5818" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>MasterSolution</UniqueName>
     <LocalizedNames>
@@ -80,20 +80,228 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="account" behavior="1" />
-      <RootComponent type="1" schemaName="contact" behavior="1" />
-      <RootComponent type="29" id="{28920155-1862-4b42-8209-80bce3694773}" behavior="0" />
-      <RootComponent type="60" id="{26843818-6508-4afe-9342-5fae2ebf15ca}" />
-      <RootComponent type="61" schemaName="new_htmlfile" behavior="0" />
+      <RootComponent type="1" schemaName="syed_solutiondetail" behavior="2" />
+      <RootComponent type="1" schemaName="syed_sourcecontrolqueue" behavior="2" />
+      <RootComponent type="60" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      <RootComponent type="60" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
+      <RootComponent type="92" id="{426589a4-e690-e911-a95d-000d3af2c610}" behavior="0" />
+      <RootComponent type="92" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" behavior="0" />
+      <RootComponent type="92" id="{835ad210-f981-e911-a95c-000d3af266c5}" behavior="0" />
+      <RootComponent type="92" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="29" displayName="Update Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{28920155-1862-4b42-8209-80bce3694773}" />
-        <Dependent key="0" type="29" displayName="Update Contact" id="{28920155-1862-4b42-8209-80bce3694773}" />
+        <Required key="0" type="1" schemaName="syed_deploymentinstance" displayName="Deployment Instance" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="1" type="60" displayName="Update Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{26843818-6508-4afe-9342-5fae2ebf15ca}" />
-        <Dependent key="1" type="60" displayName="Update Contact" parentDisplayName="Contact" id="{26843818-6508-4afe-9342-5fae2ebf15ca}" />
+        <Required key="2" type="1" schemaName="syed_mergesolutions" displayName="Merge Solution" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="syed_solutiondetail" displayName="Master Solution" solution="Active" />
+        <Dependent key="3" type="1" schemaName="syed_solutiondetail" displayName="Master Solution" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="4" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="2" schemaName="syed_newversion" displayName="New Version" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="2" schemaName="syed_listofsolutionid" displayName="List of Solution" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="2" schemaName="syed_order" displayName="Sort Order" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="2" schemaName="syed_mergesolutions" displayName="Merge Solutions" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="10" type="93" id="{565b8e84-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="2" schemaName="syed_commitids" displayName="Commit Ids" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="10" type="93" id="{565b8e84-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="2" schemaName="syed_remotename" displayName="Remote Name" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="2" schemaName="syed_includeinrelease" displayName="Include In Release" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="2" schemaName="syed_checkin" displayName="Check In" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="2" schemaName="syed_publisher" displayName="Publisher" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="2" schemaName="syed_crmsolutionsid" displayName="CRM Solutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="2" schemaName="syed_version" displayName="Version" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="2" schemaName="syed_ismaster" displayName="Is Master" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="2" schemaName="syed_solutioninstalledon" displayName="Installed On" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="2" schemaName="syed_friendlyname" displayName="Friendly Name" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="2" schemaName="syed_listofsolutions" displayName="Unique Name" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="2" schemaName="syed_ismanaged" displayName="Is Managed" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="2" schemaName="createdon" displayName="Created On" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="2" schemaName="syed_commitids" displayName="Commit Ids" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="2" schemaName="syed_repositoryurl" displayName="Repository Url" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="2" schemaName="syed_comment" displayName="Comment" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="29" type="2" schemaName="syed_overwritesolutionstxt" displayName="Overwrite Solutions File" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="2" schemaName="syed_branch" displayName="Branch" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="2" schemaName="syed_mergesolutions" displayName="Merge Solutions" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="2" schemaName="syed_status" displayName="Queue Status" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_deploymentin" displayName="syed_syed_sourcecontrolqueue_syed_deploymentin" parentSchemaName="syed_deploymentinstance" parentDisplayName="Deployment Instance" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_solutiondeta" displayName="syed_syed_sourcecontrolqueue_syed_solutiondeta" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="26" schemaName="MasterSolution Lookup View" displayName="MasterSolution Lookup View" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" id="{152ac362-2763-4bbd-bcda-2d26057ee2ff}" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="37" type="26" schemaName="SourceControlQueue Lookup View" displayName="SourceControlQueue Lookup View" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" id="{a779daf3-15e3-4fae-ac9e-a3cc02b08e6d}" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="26" schemaName="Deployment Instance" displayName="Deployment Instance" parentSchemaName="syed_deploymentinstance" parentDisplayName="Deployment Instance" solution="Active" id="{f86fd5a9-718e-e911-a95a-000d3af2cecb}" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="26" schemaName="Active Deployment Instances" displayName="Active Deployment Instances" parentSchemaName="syed_deploymentinstance" parentDisplayName="Deployment Instance" solution="Active" id="{d45a4c01-34b1-4aba-854a-c0bfcfbacf0b}" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="26" schemaName="List of Solution Details" displayName="List of Solution Details" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" solution="Active" id="{7bfbeb51-db81-e911-a95a-000d3af2cecb}" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="26" schemaName="Master Solution Details" displayName="Master Solution Details" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" solution="Active" id="{82eec2ae-a77b-e911-a95d-000d3af2c610}" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1905.4024)" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="syed_deploymentinstance" displayName="Deployment Instance" solution="Active" />
+        <Dependent key="43" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="syed_deploymentinstance" displayName="Deployment Instance" solution="Active" />
+        <Dependent key="44" type="92" displayName="SolutionManagement.EncryptPassword: Create of syed_deploymentinstance" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="2" schemaName="syed_mergesolutions" displayName="Merge Solutions" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="45" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="2" schemaName="syed_commitids" displayName="Commit Ids" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="45" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="46" type="2" schemaName="syed_password" displayName="Password" parentSchemaName="syed_deploymentinstance" parentDisplayName="Deployment Instance" solution="Active" />
+        <Dependent key="43" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="47" type="61" schemaName="syed_/Scripts/SolutionDetails.EventHandler" displayName="syed_/Scripts/SolutionDetails.EventHandler" solution="Active" />
+        <Dependent key="6" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="61" schemaName="syed_/Scripts/SourceControlQueue/EventHandler" displayName="syed_/Scripts/SourceControlQueue/EventHandler" solution="Active" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="90" schemaName="SolutionManagement.SolutionManagement, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.SolutionManagement" solution="Active" id="{c1c72de4-1c9d-4548-93de-dd2c64292cd8}" />
+        <Dependent key="50" type="92" displayName="SolutionManagement.SolutionManagement: Retrieve of syed_sourcecontrolqueue" id="{835ad210-f981-e911-a95c-000d3af266c5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="90" schemaName="SolutionManagement.EncryptPassword, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.EncryptPassword" solution="Active" id="{5a78e7cf-627d-4932-9f1b-ead80e3d1fee}" />
+        <Dependent key="43" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="90" schemaName="SolutionManagement.EncryptPassword, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.EncryptPassword" solution="Active" id="{5a78e7cf-627d-4932-9f1b-ead80e3d1fee}" />
+        <Dependent key="44" type="92" displayName="SolutionManagement.EncryptPassword: Create of syed_deploymentinstance" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="52" type="90" schemaName="SolutionManagement.DynamicSourceControlOperations, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.DynamicSourceControlOperations" solution="Active" id="{f9786a07-913b-446c-849a-3eaaf51759e8}" />
+        <Dependent key="45" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
