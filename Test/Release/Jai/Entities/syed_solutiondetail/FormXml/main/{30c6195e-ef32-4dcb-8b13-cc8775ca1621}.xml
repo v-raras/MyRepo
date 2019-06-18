@@ -7,14 +7,14 @@
     <FormActivationState>1</FormActivationState>
     <form shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
-        <tab verticallayout="true" id="{d73ceb49-c8c2-4e58-bd95-768fe999eebe}" IsUserDefined="1">
+        <tab id="{d73ceb49-c8c2-4e58-bd95-768fe999eebe}" verticallayout="true" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{22432db1-eebe-47ce-89cf-6c14db0f54de}" name="{22432db1-eebe-47ce-89cf-6c14db0f54de}" columns="111" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                <section id="{22432db1-eebe-47ce-89cf-6c14db0f54de}" name="{22432db1-eebe-47ce-89cf-6c14db0f54de}" IsUserDefined="0" showlabel="false" showbar="false" columns="111" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
@@ -24,12 +24,12 @@
                         <labels>
                           <label description="CRM Solutions" languagecode="1033" />
                         </labels>
-                        <control id="syed_crmsolutionsid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="syed_crmsolutionsid" disabled="false" uniqueid="{13c1c670-32b3-8d0b-5711-43db4672e5cb}">
+                        <control disabled="false" id="syed_crmsolutionsid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="syed_crmsolutionsid" uniqueid="{13c1c670-32b3-8d0b-5711-43db4672e5cb}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
                             <DisableMru>false</DisableMru>
                             <DisableQuickFind>false</DisableQuickFind>
-                            <DisableViewPicker>false</DisableViewPicker>
+                            <DisableViewPicker>true</DisableViewPicker>
                             <DefaultViewId>{152AC362-2763-4BBD-BCDA-2D26057EE2FF}</DefaultViewId>
                             <AllowFilterOff>false</AllowFilterOff>
                           </parameters>
@@ -39,13 +39,13 @@
                         <labels>
                           <label description="Version" languagecode="1033" />
                         </labels>
-                        <control id="syed_version" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_version" disabled="true" uniqueid="{3c401e57-bbd3-044e-9d11-a7ebab741aa0}" />
+                        <control disabled="true" id="syed_version" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_version" uniqueid="{3c401e57-bbd3-044e-9d11-a7ebab741aa0}" />
                       </cell>
                       <cell id="{e597b44d-6b43-e04c-9426-10e9d6581293}" showlabel="true" locklevel="1">
                         <labels>
                           <label description="Installed On" languagecode="1033" />
                         </labels>
-                        <control id="syed_solutioninstalledon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="syed_solutioninstalledon" disabled="true" uniqueid="{254c50d3-0772-dbab-7be8-c965143867e4}" />
+                        <control disabled="true" id="syed_solutioninstalledon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="syed_solutioninstalledon" uniqueid="{254c50d3-0772-dbab-7be8-c965143867e4}" />
                       </cell>
                     </row>
                     <row>
@@ -53,13 +53,13 @@
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
-                        <control id="syed_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_name" uniqueid="{413e5dc0-2b26-b851-9e02-4c9c9e690eb4}" disabled="false" />
+                        <control disabled="false" id="syed_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_name" uniqueid="{413e5dc0-2b26-b851-9e02-4c9c9e690eb4}" />
                       </cell>
                       <cell id="{325022a9-a98d-dc6c-8a98-25b9a3698528}" showlabel="true" locklevel="0" visible="false">
                         <labels>
                           <label description="Is Master" languagecode="1033" />
                         </labels>
-                        <control id="syed_ismaster" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="syed_ismaster" disabled="false" uniqueid="{915a639c-830c-d119-2072-71c31ddb7ac7}" />
+                        <control disabled="false" id="syed_ismaster" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="syed_ismaster" uniqueid="{915a639c-830c-d119-2072-71c31ddb7ac7}" />
                       </cell>
                       <cell id="{5de41988-3d17-48f9-b296-7014f078e1d2}">
                         <labels>
@@ -73,19 +73,19 @@
                         <labels>
                           <label description="Friendly Name" languagecode="1033" />
                         </labels>
-                        <control id="syed_friendlyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_friendlyname" disabled="true" uniqueid="{2639467d-9bc1-6103-2c29-d58472b9bdc0}" />
+                        <control disabled="true" id="syed_friendlyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_friendlyname" uniqueid="{2639467d-9bc1-6103-2c29-d58472b9bdc0}" />
                       </cell>
                       <cell id="{e12d4aca-e261-d1b7-b168-dc2e63e393b3}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Sort Order" languagecode="1033" />
                         </labels>
-                        <control id="syed_order" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="syed_order" disabled="false" uniqueid="{7c19a18c-4e74-ce81-d558-90985a1d418a}" />
+                        <control disabled="false" id="syed_order" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="syed_order" uniqueid="{7c19a18c-4e74-ce81-d558-90985a1d418a}" />
                       </cell>
                       <cell id="{0560c268-e919-328b-1429-451529e466bc}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="List of Solution" languagecode="1033" />
                         </labels>
-                        <control id="syed_listofsolutionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="syed_listofsolutionid" disabled="true" uniqueid="{7cd3bc15-86e7-144e-d038-28b277dec45e}">
+                        <control disabled="true" id="syed_listofsolutionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="syed_listofsolutionid" uniqueid="{7cd3bc15-86e7-144e-d038-28b277dec45e}">
                           <parameters>
                             <AutoResolve>true</AutoResolve>
                             <DisableMru>false</DisableMru>
@@ -102,13 +102,13 @@
                         <labels>
                           <label description="Unique Name" languagecode="1033" />
                         </labels>
-                        <control id="syed_listofsolutions" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_listofsolutions" disabled="true" uniqueid="{27489070-8794-1233-e1e7-3bb368ca8248}" />
+                        <control disabled="true" id="syed_listofsolutions" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_listofsolutions" uniqueid="{27489070-8794-1233-e1e7-3bb368ca8248}" />
                       </cell>
                       <cell id="{a854293e-95eb-1e2e-806e-169306167c38}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="New Version" languagecode="1033" />
                         </labels>
-                        <control id="syed_newversion" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_newversion" disabled="false" />
+                        <control disabled="false" id="syed_newversion" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_newversion" />
                       </cell>
                       <cell id="{6131aae8-ac1d-9bc9-0ae8-9709d53a712d}" showlabel="false">
                         <labels>
@@ -121,13 +121,13 @@
                         <labels>
                           <label description="Publisher" languagecode="1033" />
                         </labels>
-                        <control id="syed_publisher" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_publisher" disabled="true" uniqueid="{c30ea2e9-627d-b225-4649-a7b362052186}" />
+                        <control disabled="true" id="syed_publisher" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_publisher" uniqueid="{c30ea2e9-627d-b225-4649-a7b362052186}" />
                       </cell>
                       <cell id="{d74a5215-6e71-dc41-8a63-3d49750372cb}" showlabel="true" locklevel="1">
                         <labels>
                           <label description="Is Managed" languagecode="1033" />
                         </labels>
-                        <control id="syed_ismanaged" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="syed_ismanaged" disabled="true" uniqueid="{4ad3de2d-92e0-bb0b-8cd1-0de92498d665}" />
+                        <control disabled="true" id="syed_ismanaged" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="syed_ismanaged" uniqueid="{4ad3de2d-92e0-bb0b-8cd1-0de92498d665}" />
                       </cell>
                       <cell id="{380edd2d-e260-4d42-a430-0ddd74b436eb}" showlabel="false">
                         <labels>
@@ -147,27 +147,27 @@
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
-              <Title LCID="1033" Text="Common" />
+              <Title Text="Common" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Sales">
             <Titles>
-              <Title LCID="1033" Text="Sales" />
+              <Title Text="Sales" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Service">
             <Titles>
-              <Title LCID="1033" Text="Service" />
+              <Title Text="Service" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="Marketing">
             <Titles>
-              <Title LCID="1033" Text="Marketing" />
+              <Title Text="Marketing" LCID="1033" />
             </Titles>
           </NavBarArea>
           <NavBarArea Id="ProcessCenter">
             <Titles>
-              <Title LCID="1033" Text="Process Sessions" />
+              <Title Text="Process Sessions" LCID="1033" />
             </Titles>
           </NavBarArea>
         </NavBarAreas>

@@ -9,9 +9,9 @@
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
-  <InteractionCentricDashboards />
   <WebResources />
   <CustomControls />
+  <SdkMessageProcessingSteps />
   <EntityDataProviders />
   <Languages>
     <Language>1033</Language>
