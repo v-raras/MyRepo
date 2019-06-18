@@ -80,213 +80,95 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="appointment" behavior="1" />
+      <RootComponent type="1" schemaName="campaign" behavior="1" />
       <RootComponent type="1" schemaName="contact" behavior="0" />
-      <RootComponent type="1" schemaName="processsession" behavior="1" />
-      <RootComponent type="1" schemaName="syed_deploymentinstance" behavior="0" />
-      <RootComponent type="1" schemaName="syed_mergesolutions" behavior="0" />
-      <RootComponent type="1" schemaName="syed_solutiondetail" behavior="0" />
-      <RootComponent type="1" schemaName="syed_sourcecontrolqueue" behavior="1" />
-      <RootComponent type="1" schemaName="syncerror" behavior="1" />
-      <RootComponent type="29" id="{28920155-1862-4b42-8209-80bce3694773}" behavior="0" />
       <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" behavior="0" />
-      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
-      <RootComponent type="61" schemaName="syed_/Images/Submit-12" behavior="0" />
-      <RootComponent type="61" schemaName="syed_/Images/Submit-32" behavior="0" />
-      <RootComponent type="61" schemaName="syed_/Scripts/SourceControlQueue/EventHandler" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="syed_mastersolutions" displayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
+        <Required key="0" type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="syed_mastersolutions" displayName="CRM Solutions" solution="Active" />
-        <Dependent key="2" type="10" schemaName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" displayName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" />
+        <Required key="2" type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="3" type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="3" type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="5" type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="4" type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="5" type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="6" type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.7.0.70)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="7" type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.7.0.70)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="8" type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.7.0.105)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="10" type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="9" type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="11" type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.7.0.105)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="10" type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.7.0.59)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="12" type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="11" type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.7.0.105)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="13" type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.7.0.59)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="12" type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.7.0.105)" />
+        <Dependent key="1" type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="14" type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.7.0.105)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="13" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="13" type="1" schemaName="campaign" displayName="Campaign" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="15" type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.7.0.105)" />
-        <Dependent key="4" type="1" schemaName="contact" displayName="Contact" />
+        <Required key="14" type="2" schemaName="preferredequipmentid" displayName="Preferred Facility/Equipment" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="16" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
-        <Dependent key="16" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+        <Required key="16" type="2" schemaName="preferredserviceid" displayName="Preferred Service" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="17" type="2" schemaName="syed_ismanaged" displayName="Is Managed" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
+        <Required key="17" type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="18" type="2" schemaName="preferredserviceid" displayName="Preferred Service" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Required key="18" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="20" type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Required key="19" type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+        <Dependent key="20" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="21" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Required key="21" type="26" schemaName="Active Services" displayName="Active Services" parentSchemaName="service" parentDisplayName="Service" solution="msdynce_Service (9.0.5.56)" id="{2bd4de5e-a7b4-4f5d-8fde-eb3b62d8e2b2}" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="22" type="2" schemaName="syed_friendlyname" displayName="Friendly Name" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
+        <Required key="20" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+        <Dependent key="20" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="23" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
-        <Dependent key="24" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_solutiondeta" displayName="syed_syed_sourcecontrolqueue_syed_solutiondeta" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="25" type="2" schemaName="preferredequipmentid" displayName="Preferred Facility/Equipment" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
-        <Dependent key="26" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution" displayName="syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="27" type="2" schemaName="syed_sourcecontrolqueueid" displayName="SourceControlQueue" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
-        <Dependent key="26" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution" displayName="syed_syed_sourcecontrolqueue_syed_mergesolutions_ListofSolution" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="28" type="2" schemaName="syed_listofsolutions" displayName="Unique Name" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="29" type="2" schemaName="syed_mastersolutionsid" displayName="MasterSolution" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="30" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="2" type="10" schemaName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" displayName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="31" type="2" schemaName="syed_solutioninstalledon" displayName="Installed On" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="32" type="2" schemaName="syed_publisher" displayName="Publisher" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="30" type="2" schemaName="syed_name" displayName="Name" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="33" type="2" schemaName="syed_installedon" displayName="Installed On" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="1" type="10" schemaName="syed_CRMSolutions" displayName="syed_CRMSolutions" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="29" type="2" schemaName="syed_mastersolutionsid" displayName="MasterSolution" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" />
-        <Dependent key="2" type="10" schemaName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" displayName="syed_syed_mastersolutions_syed_mergesolutions_CRMSolutions" parentSchemaName="syed_mergesolutions" parentDisplayName="Merge Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="27" type="2" schemaName="syed_sourcecontrolqueueid" displayName="SourceControlQueue" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
-        <Dependent key="24" type="10" schemaName="syed_syed_sourcecontrolqueue_syed_solutiondeta" displayName="syed_syed_sourcecontrolqueue_syed_solutiondeta" parentSchemaName="syed_solutiondetail" parentDisplayName="Master Solution" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="34" type="26" schemaName="SourceControlQueue Lookup View" displayName="SourceControlQueue Lookup View" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" id="{a779daf3-15e3-4fae-ac9e-a3cc02b08e6d}" />
-        <Dependent key="35" type="60" displayName="Merge Solution" parentDisplayName="Merge Solution" id="{f646d0f5-96e4-4024-98e5-3e0b6f1e4f39}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="34" type="26" schemaName="SourceControlQueue Lookup View" displayName="SourceControlQueue Lookup View" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" id="{a779daf3-15e3-4fae-ac9e-a3cc02b08e6d}" />
-        <Dependent key="36" type="60" displayName="Information" parentDisplayName="Merge Solution" id="{367eb7db-16b1-420e-962e-86b7ea644bc1}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="37" type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
-        <Dependent key="38" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="39" type="26" schemaName="MasterSolution Lookup View" displayName="MasterSolution Lookup View" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" id="{152ac362-2763-4bbd-bcda-2d26057ee2ff}" />
-        <Dependent key="36" type="60" displayName="Information" parentDisplayName="Merge Solution" id="{367eb7db-16b1-420e-962e-86b7ea644bc1}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="34" type="26" schemaName="SourceControlQueue Lookup View" displayName="SourceControlQueue Lookup View" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" id="{a779daf3-15e3-4fae-ac9e-a3cc02b08e6d}" />
-        <Dependent key="40" type="60" displayName="Master Solution" parentDisplayName="Master Solution" id="{d2b3810c-c6bc-4108-92c5-96b563d9ab4b}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="41" type="26" schemaName="Active Services" displayName="Active Services" parentSchemaName="service" parentDisplayName="Service" solution="msdynce_Service (9.0.5.56)" id="{2bd4de5e-a7b4-4f5d-8fde-eb3b62d8e2b2}" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="39" type="26" schemaName="MasterSolution Lookup View" displayName="MasterSolution Lookup View" parentSchemaName="syed_mastersolutions" parentDisplayName="CRM Solutions" solution="Active" id="{152ac362-2763-4bbd-bcda-2d26057ee2ff}" />
-        <Dependent key="42" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="34" type="26" schemaName="SourceControlQueue Lookup View" displayName="SourceControlQueue Lookup View" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" id="{a779daf3-15e3-4fae-ac9e-a3cc02b08e6d}" />
-        <Dependent key="42" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="43" type="29" displayName="Update Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{28920155-1862-4b42-8209-80bce3694773}" />
-        <Dependent key="43" type="29" displayName="Update Contact" id="{28920155-1862-4b42-8209-80bce3694773}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="19" type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-        <Dependent key="19" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="38" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
-        <Dependent key="38" type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="44" type="61" schemaName="syed_/Scripts/MergeSoluitons/EventHandler" displayName="syed_/Scripts/MergeSoluitons/EventHandler" solution="Active" />
-        <Dependent key="35" type="60" displayName="Merge Solution" parentDisplayName="Merge Solution" id="{f646d0f5-96e4-4024-98e5-3e0b6f1e4f39}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="45" type="61" schemaName="syed_/Scripts/SolutionDetails.EventHandler" displayName="syed_/Scripts/SolutionDetails.EventHandler" solution="Active" />
-        <Dependent key="42" type="60" displayName="Information" parentDisplayName="Master Solution" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="45" type="61" schemaName="syed_/Scripts/SolutionDetails.EventHandler" displayName="syed_/Scripts/SolutionDetails.EventHandler" solution="Active" />
-        <Dependent key="40" type="60" displayName="Master Solution" parentDisplayName="Master Solution" id="{d2b3810c-c6bc-4108-92c5-96b563d9ab4b}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="44" type="61" schemaName="syed_/Scripts/MergeSoluitons/EventHandler" displayName="syed_/Scripts/MergeSoluitons/EventHandler" solution="Active" />
-        <Dependent key="36" type="60" displayName="Information" parentDisplayName="Merge Solution" id="{367eb7db-16b1-420e-962e-86b7ea644bc1}" />
+        <Required key="15" type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
