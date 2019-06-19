@@ -1,3 +1,4 @@
 abc_.zip
 def_.zip
 ghi_.zip
+Jai_managed_.zip
