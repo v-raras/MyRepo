@@ -1,0 +1,18 @@
+<html><head>
+    <title>Account Services</title>
+    <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function loadAccountServices() {
+
+            var accountId = window.parent.Xrm.Page.getAttribute("syed_commitids");
+            if (accountId !== null && accountId !== undefined && accountId.getValue() !== "") {
+                accountId = accountId.getValue();
+                document.getElementById("formedGrid").innerHTML = accountId;
+            }
+        }
+    </script>
+<meta></head>
+<body onload="loadAccountServices();">
+    <div id="formedGrid"></div>
+
+</body></html>
