@@ -1,6 +1,1 @@
-abc_.zip
-bcd_.zip
-cde_.zip
-def_.zip
 Jai_managed_.zip
-MasterSolution_.zip
