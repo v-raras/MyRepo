@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml version="9.1.0.5818" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <UniqueName>TestContainer</UniqueName>
+    <UniqueName>MasterSolution</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="Test Container" languagecode="1033" />
+      <LocalizedName description="Master Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0.0.0</Version>
