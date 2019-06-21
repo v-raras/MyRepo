@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.5818" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>TestContainer</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Test Container" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>DefaultPublishermsdyn</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Default Publisher for msdyn" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Default publisher for this organization" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>new</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="appointment" behavior="1" />
+      <RootComponent type="1" schemaName="campaign" behavior="1" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
+      <RootComponent type="92" id="{426589a4-e690-e911-a95d-000d3af2c610}" behavior="0" />
+      <RootComponent type="92" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" behavior="0" />
+      <RootComponent type="92" id="{835ad210-f981-e911-a95c-000d3af266c5}" behavior="0" />
+      <RootComponent type="92" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="0" type="1" schemaName="campaign" displayName="Campaign" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="2" type="93" id="{565b8e84-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="syed_mergesolutions" displayName="Merge Solutions" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="2" type="93" id="{565b8e84-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="syed_commitids" displayName="Commit Ids" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="2" type="93" id="{565b8e84-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="5" type="92" displayName="SolutionManagement.SolutionManagement: Retrieve of syed_sourcecontrolqueue" id="{835ad210-f981-e911-a95c-000d3af266c5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="syed_deploymentinstance" displayName="Deployment Instance" solution="Active" />
+        <Dependent key="7" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="syed_deploymentinstance" displayName="Deployment Instance" solution="Active" />
+        <Dependent key="8" type="92" displayName="SolutionManagement.EncryptPassword: Create of syed_deploymentinstance" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="9" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="syed_commitids" displayName="Commit Ids" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="9" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="syed_mergesolutions" displayName="Merge Solutions" parentSchemaName="syed_sourcecontrolqueue" parentDisplayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="9" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="2" schemaName="syed_password" displayName="Password" parentSchemaName="syed_deploymentinstance" parentDisplayName="Deployment Instance" solution="Active" />
+        <Dependent key="7" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="90" schemaName="SolutionManagement.EncryptPassword, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.EncryptPassword" solution="Active" id="{5a78e7cf-627d-4932-9f1b-ead80e3d1fee}" />
+        <Dependent key="7" type="92" displayName="SolutionManagement.EncryptPassword: Update of syed_deploymentinstance" id="{426589a4-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="90" schemaName="SolutionManagement.SolutionManagement, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.SolutionManagement" solution="Active" id="{c1c72de4-1c9d-4548-93de-dd2c64292cd8}" />
+        <Dependent key="5" type="92" displayName="SolutionManagement.SolutionManagement: Retrieve of syed_sourcecontrolqueue" id="{835ad210-f981-e911-a95c-000d3af266c5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="90" schemaName="SolutionManagement.EncryptPassword, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.EncryptPassword" solution="Active" id="{5a78e7cf-627d-4932-9f1b-ead80e3d1fee}" />
+        <Dependent key="8" type="92" displayName="SolutionManagement.EncryptPassword: Create of syed_deploymentinstance" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="90" schemaName="SolutionManagement.DynamicSourceControlOperations, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" displayName="SolutionManagement.DynamicSourceControlOperations" solution="Active" id="{f9786a07-913b-446c-849a-3eaaf51759e8}" />
+        <Dependent key="9" type="92" displayName="SolutionManagement.DynamicSourceControlOperations: Update of syed_sourcecontrolqueue" id="{4312b26b-9682-e911-a95e-000d3af2c9d4}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
